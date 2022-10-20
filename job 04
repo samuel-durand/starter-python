@@ -1,0 +1,7 @@
+nbr = int(input("Entree une valeur :"))
+
+kek = 0
+
+while kek <= nbr:
+    print(kek)
+    kek = kek +1

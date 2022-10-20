@@ -1,0 +1,14 @@
+valeur1 = int(input("valeur 1 : "))
+valeur2 = int(input("valeur 1 : "))
+
+if valeur1 < valeur2:
+   for i in range(valeur1, valeur2 - 1 , 1):
+       valeur1 = valeur1 + 1
+       print(valeur1)
+
+elif valeur1 > valeur2:
+    for i in range(valeur1, valeur2 -1, -1):
+        valeur1 = valeur1 - 1
+        print(valeur1)
+    else:
+        print ("Valeur égales")

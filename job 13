@@ -1,0 +1,26 @@
+#Créer un programme job13.py qui demande à l’utilisateur de renseigner un nombre
+#entier. Le programme devra alors parcourir le contenu du fichier “data.txt” compter le
+#nombre de mots de la taille renseignée qui s’y trouvent.
+
+import re
+
+nbrmot = int(input("Entrez la taille de votre mot: "))
+
+data = open("data.txt", "r")
+
+kekw = data.read()
+
+x = re.findall("\W+", kekw)
+
+end = 0
+i = 0
+
+while i < len(x): 
+
+    if nbrmot == len(x[i]):
+        end += 1
+        
+    i += 1 
+
+print(end)
+

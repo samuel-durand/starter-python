@@ -1,0 +1,15 @@
+def myFunction( *params ):
+    myList = []
+    
+    for param in params:
+        if isinstance(param,(int)):
+            myList.append(param)
+        else:
+            print("Attention")
+    
+    for element in myList:
+        if element % 2 == 0:
+            print (element)
+                
+myFunction(3,6,89,78,66,"jhjkhfghfgh",2)
+

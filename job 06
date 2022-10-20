@@ -1,0 +1,10 @@
+while True:
+    
+    entree = input(">")
+    
+    if entree == "Bonjour":
+      print("Bonjour à toi")
+    elif entree == "Bonsoir":
+      exit()
+    else:
+      print("entree")

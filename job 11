@@ -1,0 +1,11 @@
+import re
+
+data = open("domains.xml", "r")
+
+kekw = data.read()
+
+x = re.findall("domain", kekw)
+
+nbr = len(x)
+
+print(nbr)
